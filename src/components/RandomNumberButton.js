@@ -1,6 +1,6 @@
 
 import React, { useState, useRef } from 'react';
-import '../style.css'; // Import your styles
+import '../style.css'; 
 
 const RandomNumberButton = () => {
   const [question, setQuestion] = useState("Do you love me?");

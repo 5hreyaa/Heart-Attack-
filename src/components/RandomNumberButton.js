@@ -6,8 +6,8 @@ const RandomNumberButton = () => {
   const [question, setQuestion] = useState("Do you love me?");
   const [gifSrc, setGifSrc] = useState("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbjJvdWZzYXc1NGJ6aGp1cDE3b2dyNnVzOGN1andkMjVrMmRzeGwwZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3OhXBaoR1tVPW/giphy.gif");
   
-  const noBtnRef = useRef(null); // Reference for the No button
-  const wrapperRef = useRef(null); // Reference for the wrapper
+  const noBtnRef = useRef(null); 
+  const wrapperRef = useRef(null); 
 
   const handleYesClick = () => {
     setQuestion("no escape now! you are mine");
@@ -18,7 +18,7 @@ const RandomNumberButton = () => {
     const wrapperRect = wrapperRef.current.getBoundingClientRect();
     const noBtnRect = noBtnRef.current.getBoundingClientRect();
 
-    // Calculate max positions to ensure the button stays within the wrapper
+    
     const maxX = wrapperRect.width - noBtnRect.width;
     const maxY = wrapperRect.height - noBtnRect.height;
 
